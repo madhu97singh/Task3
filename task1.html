@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		</head>
+<body>
+	<div id="main">
+		<button id="clickme">Click me</button>
+		
+	</div>
+		<script type="text/javascript">
+
+		       $(document).ready(function(){
+		           $('#clickme').click(function(){
+					$('#main').append("<div><img src='pic.jpg' id='img'></div>");
+							
+		           });
+		           $(document).on("click",'#img',function(){
+		           	$('#img').remove();
+		           });
+		       });
+
+	</script>
+</body>
+</html>
